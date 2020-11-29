@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+
+.sidebar-block {
+	font-size: 24px;
+	display: block;
+	position: absolute;
+	height: 88%;
+	width: 300px;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 2% !important;
+	margin-left: 6% !important;
+	background-color: #ffffff;
+	border-radius: 10%;
+}
+
+.container {
+	font-size: 24px;
+	display: block;
+	position: absolute;
+	height: 88%;
+	width: 500px;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 2% !important;
+	margin-left: 33% !important;
+	background-color: #ffffff;
+	border-radius: 10%;
+}
+
+
+.description {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #000;
+}
+
+/*
+	TOOLTIP
+*/
+
+.tooltip {
+	color: #1f8b8a;
+	position: relative;
+	cursor: pointer;
+}
+
+.tooltip:before,
+.tooltip:after {
+	display: block;
+	position: absolute;
+	left: 50%;
+	visibility: hidden;
+	opacity: 0;
+	margin-bottom: 15px;
+
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+
+	transition: all .5s ease-in-out, visibility .5s ease;
+	-webkit-transition: all .5s ease-in-out, visibility .5s ease;
+	-o-transition: all .5s ease-in-out, visibility .5s ease;
+	-moz-transition: all .5s ease-in-out, visibility .5s ease;
+}
+
+.tooltip:before {
+	bottom: 30px;
+	margin-left: -100px;
+	padding: 10px;
+	width: 200px;
+	font-size: 1em;
+	color: #ffffff;
+	text-align: center;
+	background-color: rgba(0, 0, 0,.85);
+	border-radius: 10px;
+	content: attr(data-title);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after {
+	visibility: visible;
+	margin-bottom: 0;
+	opacity: 1;
+}
+
+.tooltip:after {
+	content: "";
+	border-top: 10px solid rgba(0, 0, 0,.85);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	bottom: 20px;
+	margin-left: -10px;
+}
+
+/*
+	TAGS
+*/
+
+img {
+	border: 8px solid #eeeeee;
+	border-radius: 20%;
+	margin-left: 15%;
+}
+
+#Menu {
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#Title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	text-align: center;
+}
